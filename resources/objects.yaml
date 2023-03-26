@@ -1,0 +1,32 @@
+---
+objects:
+  smallSquare:
+    nodes:
+      - x: 0
+        y: 0
+      - x: 0
+        y: 10
+      - x: 10
+        y: 10
+      - x: 10
+        y: 0 
+  largeSquare:
+    nodes:
+      - x: 0
+        y: 0
+      - x: 0
+        y: 20
+      - x: 20
+        y: 20
+      - x: 20
+        y: 0
+  rectangle:
+    nodes:
+      - x: 0
+        y: 0
+      - x: 0
+        y: 10
+      - x: 20
+        y: 10
+      - x: 20
+        y: 0 

@@ -1,0 +1,4 @@
+WIDTH = 1600
+HEIGHT = 900
+BACKGROUND_COLOR = "darkgray"
+FPS = 60
