@@ -1,4 +1,5 @@
-WIDTH = 1600
-HEIGHT = 900
-BACKGROUND_COLOR = "darkgray"
+WIDTH = 1366
+HEIGHT = 768
+BACKGROUND_COLOR = "black"
 FPS = 60
+OBJECTS_FILENAME = "resources/objects.yaml"

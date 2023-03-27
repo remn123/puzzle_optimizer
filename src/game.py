@@ -5,19 +5,23 @@ from src.settings import *
 from src.handler import *
 from src.optimizer import *
 
+
 class Game:
     
+
     def __init__(self):
         pg.init()
-        self.screen = pg.display.set_mode(WIDTH, HEIGHT)
+        self.resolution = (WIDTH, HEIGHT)
+        self.screen = pg.display.set_mode((WIDTH, HEIGHT))
         self.clock = pg.time.Clock()
         self.dt = 1
         self.make_game()
     
     def make_game(self):
         self.optimizer = Optimizer(self)
-        self.obj_handler = ObjectHandler(self)
-        
+        self.obj_handler = ObjectHandler(self, OBJECTS_FILENAME)
+        self.obj_handler.setup((WIDTH, HEIGHT))
+
     def update(self):
         self.dt = self.clock.tick(FPS)
         self.obj_handler.update(self.dt)

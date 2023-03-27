@@ -1,1 +1,1 @@
-from handler import ObjectHandler
+from .handler import ObjectHandler
