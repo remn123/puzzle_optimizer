@@ -44,12 +44,9 @@ class Object:
             ]
             return points
         nodes = self.info.get('nodes')
-        points = [
-            [xc-nodes[0][0], yc-nodes[0][1]],
-            [xc-nodes[1][0], yc+nodes[1][1]],
-            [xc+nodes[2][0], yc+nodes[2][1]],
-            [xc+nodes[3][0], yc-nodes[3][1]]
-        ]
+        nodes = np.array(nodes).T
+        center = np.array([[xc, yc]]).T
+        points = (center - nodes).T.tolist()
         return points
 
     def _rotate(self, xc, yc, points, angle):
